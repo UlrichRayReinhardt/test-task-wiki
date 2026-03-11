@@ -1,0 +1,8 @@
+services:
+  playwright-tests:
+    build: .
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+    environment:
+      - CI=true

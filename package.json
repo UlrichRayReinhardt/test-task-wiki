@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "name": "wiki-playwright-aqa",
+  "scripts": {
+    "test": "playwright test --config=playwright.config.ts",
+    "report": "playwright show-report",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "eslint . --ext .ts --fix"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.9.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1",
+    "typescript-eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
